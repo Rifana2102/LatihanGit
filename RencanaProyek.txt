@@ -1,0 +1,8 @@
+"## Rencana Kedepan
+1. Membuat website yang bisa dibuka di HP dan komputer
+2. Menambah fitur interaktif dengan JavaScript
+3. Mencoba framework seperti Bootstrap
+4. Belajar membuat backend sederhana
+5. Berlatih menulis kode yang rapi
+6. Mencoba menggunakan API
+##Proyek ini akan terus berkembang seiring bertambahnya pengetahuan saya."
