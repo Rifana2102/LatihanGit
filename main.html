@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Evaluasi HTML Dasar</title>
+    <style>
+        .center-text {
+            text-align: center;
+        }
+        .center-image {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="center-text">Selamat Datang di Evaluasi HTML</h1>
+    <p class="center-text">Halaman ini bertujuan untuk menguji dan mengevaluasi pemahaman dasar tentang struktur HTML dan elemen-elemennya.</p>
+
+    <h2 class="center-text">Pengelolaan Teks</h2>
+    <p class="center-text">Penting untuk memahami bagaimana <strong>teks tebal</strong> dan <em>teks miring</em> digunakan dalam HTML. Ini membantu dalam menekankan bagian tertentu dari teks yang perlu diperhatikan oleh pembaca.</p>
+
+    <hr>
+
+    <blockquote class="center-text">
+        "Hidup ini seperti bersepeda. Untuk menjaga keseimbanganmu, kamu harus terus bergerak." - <cite>Albert Einstein</cite>
+    </blockquote>
+
+    <h2 class="center-text">Hyperlink dan Gambar</h2>
+    <p class="center-text">Kunjungi <a href="https://id.wikipedia.org/wiki/Sejarah_Indonesia">situs web ini</a> untuk menemukan informasi yang menarik dan berguna.</p>
+
+        <a class="center-image" href="https://en.wikipedia.org/wiki/en:Nicolaes_Visscher_II">
+            <img class="center-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Nicolaes_Visscher_Indiae_Orientalis.jpg/800px-Nicolaes_Visscher_Indiae_Orientalis.jpg" alt="Indiae Orientalis, 17th century map by by Nicolaes Visscher II">
+        </a>
+
+    <h2>Membuat Daftar</h2>
+    <p>Berikut adalah tiga hal yang ingin saya capai dalam satu tahun ke depan:</p>
+    <ol>
+        <li>Meningkatkan keterampilan pemrograman saya.</li>
+        <li>Mempelajari keterampilan baru dan berkembang secara profesional, terutama dengan cara yang selaras dengan deskripsi pekerjaan dan tujuan perusahaan.</li>
+        <li>Meningkatkan koneksi diberbagai bidang.</li>
+    </ol>
+
+    <p>Berikut adalah tiga hobi atau aktivitas yang saya sukai:</p>
+    <ul>
+        <li>Membaca buku seperti novel dan komik.</li>
+        <li>Mendengarkan musik.</li>
+        <li>Mengoleksi komik.</li>
+    </ul>
+
+    <h2>Tabel Data</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Nama</th>
+                <th>Umur</th>
+                <th>Kota</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Zafira Nur Kamila</td>
+                <td>19</td>
+                <td>Bandung</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2 class="center-text">Formulir Pendaftaran</h2>
+    <form class="center-text" action="#" method="post">
+        <label for="nama">Nama Lengkap:</label><br>
+        <input type="text" id="nama" name="nama" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label>Jenis Kelamin:</label><br>
+        <input type="radio" id="pria" name="jenis_kelamin" value="pria" required>
+        <label for="pria">Pria</label><br>
+        <input type="radio" id="wanita" name="jenis_kelamin" value="wanita" required>
+        <label for="wanita">Wanita</label><br><br>
+
+        <label for="kota">Kota Tempat Tinggal:</label><br>
+        <select id="kota" name="kota" required>
+            <option value="jakarta">Jakarta</option>
+            <option value="bandung">Bandung</option>
+            <option value="surabaya">Surabaya</option>
+        </select><br><br>
+
+        <input type="checkbox" id="syarat" name="syarat" value="setuju" required>
+        <label for="syarat">Saya menyetujui syarat dan ketentuan</label><br><br>
+
+        <label for="pesan">Pesan atau Komentar:</label><br>
+        <textarea id="pesan" name="pesan" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit" value="Kirim">
+    </form>
+</body>
+</html>
