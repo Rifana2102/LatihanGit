@@ -1,5 +1,5 @@
 window.onload = function() {
-    document.querySelector('h1').textContent = "Latihan JavaScript Selesai";
+    document.querySelector('h1').textContent = "Selamat datang di latihan JavaScript";
 
     // Nama variabel
     let name = "John";
@@ -16,26 +16,7 @@ window.onload = function() {
         outputDiv.innerHTML += `<li>${fruits[i]}</li>`;
     }
     outputDiv.innerHTML += "</ul>";
-    function cekNilai() {
-        let inputValue = document.getElementById("userInput").value;
-        let outputDiv = document.getElementById("output");
 
-        // Memeriksa apakah nilai lebih besar dari, sama dengan, atau kurang dari 10
-        if (inputValue > 10) {
-            outputDiv.innerHTML += `<p>Nilai ${inputValue} lebih besar dari 10.</p>`;
-        } else if (inputValue == 10) {
-            outputDiv.innerHTML += `<p>Nilai ${inputValue} sama dengan 10.</p>`;
-        } else {
-            outputDiv.innerHTML += `<p>Nilai ${inputValue} kurang dari 10.</p>`;
-        }
-
-        // Menampilkan angka 1 hingga selanjutnya
-        outputDiv.innerHTML += "<p>Angka dari 1 hingga " + inputValue + ":</p><ul>";
-        for (let i = 1; i <= inputValue; i++) {
-            outputDiv.innerHTML += `<li>${i}</li>`;
-        }
-        outputDiv.innerHTML += "</ul>";
-    }
     // Nama pertama dan nama terakhir 
     let person = {
         firstName: "John",
@@ -109,4 +90,24 @@ window.onload = function() {
     outputDiv.innerHTML += "</ul>";
 };
 
+// Fungsi untuk mengecek nilai input
+function cekNilai() {
+    let inputValue = document.getElementById("userInput").value;
+    let outputDiv = document.getElementById("output");
 
+    // Memeriksa apakah nilai lebih besar dari, sama dengan, atau kurang dari 10
+    if (inputValue > 10) {
+        outputDiv.innerHTML += `<p>Nilai ${inputValue} lebih besar dari 10.</p>`;
+    } else if (inputValue == 10) {
+        outputDiv.innerHTML += `<p>Nilai ${inputValue} sama dengan 10.</p>`;
+    } else {
+        outputDiv.innerHTML += `<p>Nilai ${inputValue} kurang dari 10.</p>`;
+    }
+
+    // Menampilkan angka 1 hingga selanjutnya
+    outputDiv.innerHTML += "<p>Angka dari 1 hingga " + inputValue + ":</p><ul>";
+    for (let i = 1; i <= inputValue; i++) {
+        outputDiv.innerHTML += `<li>${i}</li>`;
+    }
+    outputDiv.innerHTML += "</ul>";
+}
