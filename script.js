@@ -109,6 +109,4 @@ window.onload = function() {
     outputDiv.innerHTML += "</ul>";
 };
 
-// Fungsi untuk mengecek nilai input
-
 
